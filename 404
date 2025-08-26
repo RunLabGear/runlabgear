@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Page not found · RunLabGear</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="inner container" style="padding:64px 0;text-align:center">
+    <h1>404 — Page not found</h1>
+    <p>That page has run off for a quick jog. Try these instead:</p>
+    <p><a class="btn" href="/articles/">Browse all Articles</a></p>
+    <p><a class="btn" href="/">Go to Home</a></p>
+  </div>
+</body>
+</html>
