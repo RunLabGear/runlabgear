@@ -12,27 +12,58 @@
   <title>RunLabGear · UK Running Shoe Reviews & Guides</title>
   <meta name="description" content="Expert UK running shoe reviews and buyer’s guides. Best marathon, trail, neutral and stability shoes for 2025, plus training tips and rotation advice.">
 
-  <!-- Open Graph (Facebook/LinkedIn) -->
+  <!-- Social previews (optional images; remove if you don’t have them yet) -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.runlabgear.co.uk/">
   <meta property="og:title" content="RunLabGear · UK Running Shoe Reviews & Guides">
   <meta property="og:description" content="Expert UK running shoe reviews and buyer’s guides for UK runners.">
   <meta property="og:image" content="https://www.runlabgear.co.uk/assets/img/og-cover.jpg">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="RunLabGear · UK Running Shoe Reviews & Guides">
   <meta name="twitter:description" content="Expert UK running shoe reviews and buyer’s guides for UK runners.">
   <meta name="twitter:image" content="https://www.runlabgear.co.uk/assets/img/og-cover.jpg">
 
-  <!-- Favicons -->
   <link rel="icon" href="/assets/img/favicon.png">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- Structured data: WebSite + Organization -->
+  <!-- Minimal home-specific styles to match your dark theme -->
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#141414;
+      --card-border:#232323;
+      --text:#f5f5f5;
+      --muted:#b3b3b3;
+      --accent:#ffd100; /* your yellow */
+    }
+    body{ background:var(--bg); color:var(--text); }
+    .hero{ padding:64px 0 40px; text-align:center; }
+    .hero h1{ margin:0 0 12px; font-size:clamp(28px,5vw,54px); }
+    .hero p{ color:var(--muted); margin:0 0 20px; }
+    .cta{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:12px 18px; border-radius:10px;
+      background:var(--accent); color:#000; text-decoration:none; font-weight:600;
+      box-shadow:0 6px 18px rgba(255,209,0,.18);
+    }
+    .grid{ display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px; }
+    .card{
+      display:block; text-decoration:none; color:inherit;
+      background:var(--card); border:1px solid var(--card-border); border-radius:16px; padding:18px;
+      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .card h3{ margin:0 0 8px; font-size:1.06rem; color:#fff; }
+    .card p{ margin:0; color:var(--muted); }
+    .card:hover{ transform:translateY(-2px); border-color:#2e2e2e; box-shadow:0 10px 22px rgba(0,0,0,.35); }
+    .section-title{ margin:12px 0 10px; font-size:1.35rem; }
+    .subtle{ color:var(--muted); }
+    .notice{ background:#111; border:1px dashed #2a2a2a; padding:12px 14px; border-radius:12px; color:var(--muted); }
+    .nav .brand{ color:var(--accent) !important; font-weight:800; }
+    .nav a{ color:var(--accent); }
+  </style>
+
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -69,38 +100,38 @@
     </div>
   </div>
 
-  <div class="inner container hero" style="padding:48px 0;text-align:center">
+  <div class="inner container hero">
     <h1>UK Running Shoe Reviews & Guides</h1>
     <p class="subtle">Straightforward advice for marathon build-ups, trail adventures and everyday miles.</p>
-    <p><a class="cta" href="/articles/" style="display:inline-block;padding:12px 18px;border-radius:10px;border:1px solid #111;text-decoration:none;">Browse all Articles →</a></p>
+    <p><a class="cta" href="/articles/">Browse all Articles →</a></p>
   </div>
 
   <div class="inner container">
-    <h2>Featured Guides</h2>
-    <div class="grid" style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:24px">
-      <a class="card" href="/articles/best-marathon-shoes-2025.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+    <h2 class="section-title">Featured Guides</h2>
+    <div class="grid">
+      <a class="card" href="/articles/best-marathon-shoes-2025.html">
         <h3>Best Marathon Training Shoes (2025)</h3>
-        <p class="subtle">Cushioning resilience and stability for long blocks in UK weather.</p>
+        <p>Cushioning resilience and stability for long blocks in UK weather.</p>
       </a>
-      <a class="card" href="/articles/best-trail-shoes-uk.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+      <a class="card" href="/articles/best-trail-shoes-uk.html">
         <h3>Best Trail Running Shoes UK (2025)</h3>
-        <p class="subtle">Grip and protection for mud, fells and rocky paths.</p>
+        <p>Grip and protection for mud, fells and rocky paths.</p>
       </a>
-      <a class="card" href="/articles/neutral-shoes-2025.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+      <a class="card" href="/articles/neutral-shoes-2025.html">
         <h3>Best Neutral Running Shoes (2025)</h3>
-        <p class="subtle">Balanced daily trainers that just work.</p>
+        <p>Balanced daily trainers that just work.</p>
       </a>
-      <a class="card" href="/articles/stability-shoes-2025.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+      <a class="card" href="/articles/stability-shoes-2025.html">
         <h3>Best Stability Running Shoes (2025)</h3>
-        <p class="subtle">Guidance without harsh posting for overpronators.</p>
+        <p>Guidance without harsh posting for overpronators.</p>
       </a>
-      <a class="card" href="/articles/shoe-rotation-guide.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+      <a class="card" href="/articles/shoe-rotation-guide.html">
         <h3>Shoe Rotation Guide</h3>
-        <p class="subtle">Reduce injury risk and extend shoe life with a smart rotation.</p>
+        <p>Reduce injury risk and extend shoe life with a smart rotation.</p>
       </a>
-      <a class="card" href="/articles/choose-right-shoe.html" style="border:1px solid #eee;border-radius:12px;padding:16px;background:#fff;text-decoration:none;color:inherit;">
+      <a class="card" href="/articles/choose-right-shoe.html">
         <h3>How to Choose the Right Running Shoe</h3>
-        <p class="subtle">Fit, gait, cushioning and budget — the essentials.</p>
+        <p>Fit, gait, cushioning and budget — the essentials.</p>
       </a>
     </div>
 
