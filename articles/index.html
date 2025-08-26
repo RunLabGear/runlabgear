@@ -3,15 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Articles · RunLabGear</title>
-  <meta name="description" content="Browse all RunLabGear articles: marathon shoes, trail shoes, neutral, stability, rotation and buying guides for UK runners.">
+  <title>RunLabGear · UK Running Shoe Reviews & Guides</title>
+  <meta name="description" content="Professional running shoe reviews & buyer’s guides for UK runners. Marathon, trail, neutral and stability picks with practical training advice.">
   <link rel="stylesheet" href="/assets/css/style.css">
   <style>
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+    .hero { padding:48px 0; text-align:center; }
+    .hero h1 { margin:0 0 10px; }
+    .cta { display:inline-block; padding:12px 18px; border-radius:10px; border:1px solid #111; text-decoration:none; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); margin-top:24px; }
     .card { border:1px solid #eee; border-radius:12px; padding:16px; background:#fff; text-decoration:none; color:inherit; }
     .card:hover { box-shadow:0 6px 16px rgba(0,0,0,.06); transform:translateY(-1px); }
-    .card h3 { margin:0 0 6px 0; font-size:1.05rem; }
-    .subtle { color:#666; font-size:.95rem; }
+    .subtle { color:#666; }
   </style>
 </head>
 <body>
@@ -19,67 +21,73 @@
     <div class="inner container">
       <a class="brand" href="/index.html">🏃 RunLabGear</a>
       <div style="display:flex;gap:16px;align-items:center">
-        <a href="/index.html">Home</a>
+        <a href="/articles/">Articles</a>
         <a href="/about.html">About</a>
         <a href="/disclosure.html">Disclosure</a>
       </div>
     </div>
   </div>
 
-  <div class="article">
-    <div class="meta">Updated 26 August 2025</div>
-    <h1>Articles</h1>
-    <p class="subtle">All our expert running shoe guides and training resources. Click a card to read.</p>
+  <div class="inner container hero">
+    <h1>UK Running Shoe Reviews & Guides</h1>
+    <p class="subtle">Straightforward advice for marathon build-ups, trail adventures and everyday miles.</p>
+    <p><a class="cta" href="/articles/">Browse all Articles →</a></p>
+  </div>
 
-    <div class="grid" role="list">
-      <a class="card" role="listitem" href="/articles/best-marathon-shoes-2025.html">
-        <h3>Best Running Shoes for Marathon Training (2025)</h3>
-        <p class="subtle">Cushioning resilience, energy return and stability for UK marathon build-ups.</p>
+  <div class="inner container">
+    <h2>Featured Guides</h2>
+    <div class="grid">
+      <a class="card" href="/articles/best-marathon-shoes-2025.html">
+        <h3>Best Marathon Training Shoes (2025)</h3>
+        <p class="subtle">Cushioning resilience and stability for long blocks in UK weather.</p>
       </a>
-
-      <a class="card" role="listitem" href="/articles/best-trail-shoes-uk.html">
+      <a class="card" href="/articles/best-trail-shoes-uk.html">
         <h3>Best Trail Running Shoes UK (2025)</h3>
-        <p class="subtle">Grip, protection and comfort for muddy fells and rocky paths.</p>
+        <p class="subtle">Grip and protection for mud, fells and rocky paths.</p>
       </a>
-
-      <a class="card" role="listitem" href="/articles/neutral-shoes-2025.html">
+      <a class="card" href="/articles/neutral-shoes-2025.html">
         <h3>Best Neutral Running Shoes (2025)</h3>
-        <p class="subtle">Workhorse trainers for daily miles with balanced cushioning.</p>
+        <p class="subtle">Balanced daily trainers that just work.</p>
       </a>
-
-      <a class="card" role="listitem" href="/articles/stability-shoes-2025.html">
+      <a class="card" href="/articles/stability-shoes-2025.html">
         <h3>Best Stability Running Shoes (2025)</h3>
-        <p class="subtle">Smooth guidance for overpronators without harsh posting.</p>
+        <p class="subtle">Guidance without harsh posting for overpronators.</p>
       </a>
-
-      <a class="card" role="listitem" href="/articles/shoe-rotation-guide.html">
-        <h3>Running Shoe Rotation Guide</h3>
-        <p class="subtle">Build a rotation to reduce injury risk and boost performance.</p>
+      <a class="card" href="/articles/shoe-rotation-guide.html">
+        <h3>Shoe Rotation Guide</h3>
+        <p class="subtle">Reduce injury risk and extend shoe life with a smart rotation.</p>
       </a>
-
-      <a class="card" role="listitem" href="/articles/choose-right-shoe.html">
+      <a class="card" href="/articles/choose-right-shoe.html">
         <h3>How to Choose the Right Running Shoe</h3>
-        <p class="subtle">Fit, gait, cushioning and budget — a UK-focused buying guide.</p>
+        <p class="subtle">Fit, gait, cushioning and budget — the essentials.</p>
       </a>
+    </div>
+
+    <div class="notice" style="margin-top:24px">
+      <strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
     </div>
   </div>
 
   <div class="footer">
     <div class="inner container">
-      <div><div class="brand">🏃 RunLabGear</div><p class="subtle">Professional running shoe reviews &amp; buying advice for UK runners.</p></div>
-      <div><div class="badge">Pages</div><p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="/disclosure.html">Affiliate Disclosure</a></p></div>
+      <div><div class="brand">🏃 RunLabGear</div><p class="subtle">Professional running shoe reviews & buying advice for UK runners.</p></div>
+      <div><div class="badge">Pages</div><p><a href="/articles/">Articles</a> · <a href="/about.html">About</a> · <a href="/disclosure.html">Affiliate Disclosure</a></p></div>
       <div><div class="badge">Legal</div><small>© 2025 RunLabGear.</small></div>
     </div>
   </div>
 
-  <!-- CollectionPage schema -->
+  <!-- WebSite + BreadcrumbList schema (lightweight) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"CollectionPage",
-    "name":"RunLabGear Articles",
-    "description":"All RunLabGear articles — marathon shoes, trail shoes, neutral, stability, rotation and buying guides.",
-    "url":"https://www.runlabgear.co.uk/articles/"
+    "@type":"WebSite",
+    "name":"RunLabGear",
+    "url":"https://www.runlabgear.co.uk/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://www.runlabgear.co.uk/search?q={query}",
+      "query-input":"required name=query"
+    }
   }
   </script>
 </body>
