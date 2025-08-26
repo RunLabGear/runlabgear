@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://runlabgear.com/sitemap.xml
+
+Sitemap: https://www.runlabgear.co.uk/sitemap.xml
