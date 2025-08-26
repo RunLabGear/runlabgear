@@ -4,18 +4,83 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Articles · RunLabGear</title>
-  <meta name="description" content="All RunLabGear articles — marathon shoes, trail shoes, neutral, stability, rotation and buying guides.">
+  <meta name="description" content="Browse all RunLabGear articles: marathon shoes, trail shoes, neutral, stability, rotation and buying guides for UK runners.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); }
+    .card { border:1px solid #eee; border-radius:12px; padding:16px; background:#fff; text-decoration:none; color:inherit; }
+    .card:hover { box-shadow:0 6px 16px rgba(0,0,0,.06); transform:translateY(-1px); }
+    .card h3 { margin:0 0 6px 0; font-size:1.05rem; }
+    .subtle { color:#666; font-size:.95rem; }
+  </style>
 </head>
 <body>
-  <h1>Articles Hub</h1>
-  <p>Updated 26 August 2025</p>
-  <ul>
-    <li><a href="best-marathon-shoes-2025.html">Best Marathon Shoes 2025</a></li>
-    <li><a href="best-trail-shoes-uk.html">Best Trail Shoes UK</a></li>
-    <li><a href="neutral-shoes-2025.html">Best Neutral Shoes 2025</a></li>
-    <li><a href="stability-shoes-2025.html">Best Stability Shoes 2025</a></li>
-    <li><a href="shoe-rotation-guide.html">Shoe Rotation Guide</a></li>
-    <li><a href="choose-right-shoe.html">Choosing the Right Shoe</a></li>
-  </ul>
+  <div class="nav">
+    <div class="inner container">
+      <a class="brand" href="/index.html">🏃 RunLabGear</a>
+      <div style="display:flex;gap:16px;align-items:center">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/disclosure.html">Disclosure</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="article">
+    <div class="meta">Updated 26 August 2025</div>
+    <h1>Articles</h1>
+    <p class="subtle">All our expert running shoe guides and training resources. Click a card to read.</p>
+
+    <div class="grid" role="list">
+      <a class="card" role="listitem" href="/articles/best-marathon-shoes-2025.html">
+        <h3>Best Running Shoes for Marathon Training (2025)</h3>
+        <p class="subtle">Cushioning resilience, energy return and stability for UK marathon build-ups.</p>
+      </a>
+
+      <a class="card" role="listitem" href="/articles/best-trail-shoes-uk.html">
+        <h3>Best Trail Running Shoes UK (2025)</h3>
+        <p class="subtle">Grip, protection and comfort for muddy fells and rocky paths.</p>
+      </a>
+
+      <a class="card" role="listitem" href="/articles/neutral-shoes-2025.html">
+        <h3>Best Neutral Running Shoes (2025)</h3>
+        <p class="subtle">Workhorse trainers for daily miles with balanced cushioning.</p>
+      </a>
+
+      <a class="card" role="listitem" href="/articles/stability-shoes-2025.html">
+        <h3>Best Stability Running Shoes (2025)</h3>
+        <p class="subtle">Smooth guidance for overpronators without harsh posting.</p>
+      </a>
+
+      <a class="card" role="listitem" href="/articles/shoe-rotation-guide.html">
+        <h3>Running Shoe Rotation Guide</h3>
+        <p class="subtle">Build a rotation to reduce injury risk and boost performance.</p>
+      </a>
+
+      <a class="card" role="listitem" href="/articles/choose-right-shoe.html">
+        <h3>How to Choose the Right Running Shoe</h3>
+        <p class="subtle">Fit, gait, cushioning and budget — a UK-focused buying guide.</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="inner container">
+      <div><div class="brand">🏃 RunLabGear</div><p class="subtle">Professional running shoe reviews &amp; buying advice for UK runners.</p></div>
+      <div><div class="badge">Pages</div><p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="/disclosure.html">Affiliate Disclosure</a></p></div>
+      <div><div class="badge">Legal</div><small>© 2025 RunLabGear.</small></div>
+    </div>
+  </div>
+
+  <!-- CollectionPage schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"RunLabGear Articles",
+    "description":"All RunLabGear articles — marathon shoes, trail shoes, neutral, stability, rotation and buying guides.",
+    "url":"https://www.runlabgear.co.uk/articles/"
+  }
+  </script>
 </body>
 </html>
