@@ -4,15 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- Canonical + robots -->
   <link rel="canonical" href="https://www.runlabgear.co.uk/">
   <meta name="robots" content="index,follow,max-image-preview:large">
 
-  <!-- Basic SEO -->
   <title>RunLabGear · UK Running Shoe Reviews & Guides</title>
-  <meta name="description" content="Expert UK running shoe reviews and buyer’s guides. Best marathon, trail, neutral and stability shoes for 2025, plus training tips and rotation advice.">
+  <meta name="description" content="Expert UK running shoe reviews and buyer’s guides: best marathon, trail, neutral and stability shoes for 2025, plus rotation tips.">
 
-  <!-- Social previews (optional images; remove if you don’t have them yet) -->
+  <!-- Icons & CSS -->
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Social previews -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.runlabgear.co.uk/">
   <meta property="og:title" content="RunLabGear · UK Running Shoe Reviews & Guides">
@@ -23,69 +26,41 @@
   <meta name="twitter:description" content="Expert UK running shoe reviews and buyer’s guides for UK runners.">
   <meta name="twitter:image" content="https://www.runlabgear.co.uk/assets/img/og-cover.jpg">
 
-  <link rel="icon" href="/assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-  <link rel="stylesheet" href="/assets/css/style.css">
-
-  <!-- Minimal home-specific styles to match your dark theme -->
+  <!-- Minimal home-specific styles -->
   <style>
-    :root{
-      --bg:#0b0b0b;
-      --card:#141414;
-      --card-border:#232323;
-      --text:#f5f5f5;
-      --muted:#b3b3b3;
-      --accent:#ffd100; /* your yellow */
-    }
+    :root{ --bg:#0b0b0b; --card:#141414; --card-border:#232323; --text:#f5f5f5; --muted:#b3b3b3; --accent:#ffd100; }
     body{ background:var(--bg); color:var(--text); }
     .hero{ padding:64px 0 40px; text-align:center; }
     .hero h1{ margin:0 0 12px; font-size:clamp(28px,5vw,54px); }
     .hero p{ color:var(--muted); margin:0 0 20px; }
-    .cta{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:12px 18px; border-radius:10px;
-      background:var(--accent); color:#000; text-decoration:none; font-weight:600;
-      box-shadow:0 6px 18px rgba(255,209,0,.18);
-    }
+    .cta{ display:inline-flex; align-items:center; gap:8px; padding:12px 18px; border-radius:10px; background:var(--accent); color:#000; text-decoration:none; font-weight:600; box-shadow:0 6px 18px rgba(255,209,0,.18); }
     .grid{ display:grid; gap:18px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:18px; }
-    .card{
-      display:block; text-decoration:none; color:inherit;
-      background:var(--card); border:1px solid var(--card-border); border-radius:16px; padding:18px;
-      transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-    }
+    .card{ display:block; text-decoration:none; color:inherit; background:var(--card); border:1px solid var(--card-border); border-radius:16px; padding:18px; transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
     .card h3{ margin:0 0 8px; font-size:1.06rem; color:#fff; }
     .card p{ margin:0; color:var(--muted); }
     .card:hover{ transform:translateY(-2px); border-color:#2e2e2e; box-shadow:0 10px 22px rgba(0,0,0,.35); }
     .section-title{ margin:12px 0 10px; font-size:1.35rem; }
     .subtle{ color:var(--muted); }
-    .notice{ background:#111; border:1px dashed #2a2a2a; padding:12px 14px; border-radius:12px; color:var(--muted); }
+    .notice{ background:#111; border:1px dashed #2a2a2a; padding:12px 14px; border-radius:12px; color:var(--muted); margin-top:24px; }
     .nav .brand{ color:var(--accent) !important; font-weight:800; }
     .nav a{ color:var(--accent); }
   </style>
 
   <!-- Structured data -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "RunLabGear",
-    "url": "https://www.runlabgear.co.uk/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.runlabgear.co.uk/search?q={query}",
-      "query-input": "required name=query"
-    }
-  }
+  {"@context":"https://schema.org","@type":"WebSite","name":"RunLabGear","url":"https://www.runlabgear.co.uk/","potentialAction":{"@type":"SearchAction","target":"https://www.runlabgear.co.uk/search?q={query}","query-input":"required name=query"}}
   </script>
   <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"RunLabGear",
-    "url":"https://www.runlabgear.co.uk/",
-    "logo":"https://www.runlabgear.co.uk/assets/img/logo.png",
-    "sameAs":[]
-  }
+  {"@context":"https://schema.org","@type":"Organization","name":"RunLabGear","url":"https://www.runlabgear.co.uk/","logo":"https://www.runlabgear.co.uk/assets/img/logo.png","sameAs":[]}
+  </script>
+
+  <!-- Google tag (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYHY9SVCZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VYHY9SVCZ1');
   </script>
 </head>
 <body>
@@ -109,35 +84,15 @@
   <div class="inner container">
     <h2 class="section-title">Featured Guides</h2>
     <div class="grid">
-      <a class="card" href="/articles/best-marathon-shoes-2025.html">
-        <h3>Best Marathon Training Shoes (2025)</h3>
-        <p>Cushioning resilience and stability for long blocks in UK weather.</p>
-      </a>
-      <a class="card" href="/articles/best-trail-shoes-uk.html">
-        <h3>Best Trail Running Shoes UK (2025)</h3>
-        <p>Grip and protection for mud, fells and rocky paths.</p>
-      </a>
-      <a class="card" href="/articles/neutral-shoes-2025.html">
-        <h3>Best Neutral Running Shoes (2025)</h3>
-        <p>Balanced daily trainers that just work.</p>
-      </a>
-      <a class="card" href="/articles/stability-shoes-2025.html">
-        <h3>Best Stability Running Shoes (2025)</h3>
-        <p>Guidance without harsh posting for overpronators.</p>
-      </a>
-      <a class="card" href="/articles/shoe-rotation-guide.html">
-        <h3>Shoe Rotation Guide</h3>
-        <p>Reduce injury risk and extend shoe life with a smart rotation.</p>
-      </a>
-      <a class="card" href="/articles/choose-right-shoe.html">
-        <h3>How to Choose the Right Running Shoe</h3>
-        <p>Fit, gait, cushioning and budget — the essentials.</p>
-      </a>
+      <a class="card" href="/articles/best-marathon-shoes-2025.html"><h3>Best Marathon Training Shoes (2025)</h3><p>Cushioning resilience and stability for long blocks in UK weather.</p></a>
+      <a class="card" href="/articles/best-trail-shoes-uk.html"><h3>Best Trail Running Shoes UK (2025)</h3><p>Grip and protection for mud, fells and rocky paths.</p></a>
+      <a class="card" href="/articles/neutral-shoes-2025.html"><h3>Best Neutral Running Shoes (2025)</h3><p>Balanced daily trainers that just work.</p></a>
+      <a class="card" href="/articles/stability-shoes-2025.html"><h3>Best Stability Running Shoes (2025)</h3><p>Guidance without harsh posting for overpronators.</p></a>
+      <a class="card" href="/articles/shoe-rotation-guide.html"><h3>Shoe Rotation Guide</h3><p>Reduce injury risk and extend shoe life with a smart rotation.</p></a>
+      <a class="card" href="/articles/choose-right-shoe.html"><h3>How to Choose the Right Running Shoe</h3><p>Fit, gait, cushioning and budget — the essentials.</p></a>
     </div>
 
-    <div class="notice" style="margin-top:24px">
-      <strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.
-    </div>
+    <div class="notice"><strong>Affiliate disclosure:</strong> As an Amazon Associate I earn from qualifying purchases.</div>
   </div>
 
   <div class="footer">
@@ -147,5 +102,24 @@
       <div><div class="badge">Legal</div><small>© 2025 RunLabGear.</small></div>
     </div>
   </div>
+
+  <!-- Track outbound affiliate clicks -->
+  <script>
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a'); if(!a) return;
+      const href = (a.getAttribute('href')||'').toLowerCase();
+      const isAmazon = href.includes('amazon.co.uk') || href.includes('amzn.to');
+      const rel = (a.getAttribute('rel')||'').toLowerCase();
+      const isSponsored = rel.includes('sponsored') || rel.includes('nofollow');
+      if (isAmazon || isSponsored) {
+        gtag('event', 'affiliate_click', {
+          event_category: 'affiliate',
+          event_label: href,
+          link_text: (a.textContent||'').trim(),
+          destination: isAmazon ? 'amazon' : 'other'
+        });
+      }
+    }, {capture:true});
+  </script>
 </body>
 </html>
