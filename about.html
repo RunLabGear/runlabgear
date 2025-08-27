@@ -1,47 +1,78 @@
 <!doctype html>
-<html lang="en-GB"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About RunLabGear · RunLabGear</title>
-<meta name="description" content="Who we are and how we recommend running shoes at RunLabGear.">
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="icon" href="/assets/img/favicon.png">
-<meta property="og:site_name" content="RunLabGear">
-<meta property="og:title" content="About RunLabGear">
-<meta property="og:description" content="Who we are and how we recommend running shoes at RunLabGear.">
-</head><body>
-    <div class="nav">
-      <div class="inner container">
-        <a class="brand" href="/index.html">🏃 RunLabGear</a>
-        <div style="display:flex;gap:16px;align-items:center">
-          <a href="/index.html" >Home</a>
-          <a href="/about.html" class="badge">About</a>
-          <a href="/disclosure.html" >Disclosure</a>
-        </div>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>About RunLabGear · RunLabGear</title>
+  <meta name="description" content="Who we are and how we recommend running shoes at RunLabGear.">
+  <link rel="canonical" href="https://www.runlabgear.co.uk/about.html">
+
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Social previews -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="About RunLabGear">
+  <meta property="og:description" content="Who we are and how we recommend running shoes at RunLabGear.">
+  <meta property="og:url" content="https://www.runlabgear.co.uk/about.html">
+  <meta property="og:image" content="https://www.runlabgear.co.uk/assets/img/og-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VYHY9SVCZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VYHY9SVCZ1');
+  </script>
+</head>
+<body>
+  <div class="nav">
+    <div class="inner container">
+      <a class="brand" href="/index.html">🏃 RunLabGear</a>
+      <div style="display:flex;gap:16px;align-items:center">
+        <a href="/index.html">Home</a>
+        <a href="/about.html" class="badge">About</a>
+        <a href="/disclosure.html">Disclosure</a>
       </div>
     </div>
-    
-    <div class="article">
-      <div class="meta">About RunLabGear</div>
-      <h1>Helping UK Runners Choose with Confidence</h1>
-      <p>RunLabGear provides independent, professional running shoe advice for UK athletes. We combine hands‑on testing, technical analysis and retailer price checks to produce clear recommendations without hype.</p>
-      <p>Founded by Mikey, a London Marathon finisher and long‑time runner, the site focuses on practical guidance: which shoes suit which runner, how long they last and where to buy at a fair UK price.</p>
-      <p class="notice">Contact: <a href="mailto:hello@runlabgear.com">hello@runlabgear.com</a></p>
+  </div>
+
+  <div class="article">
+    <div class="meta">About RunLabGear</div>
+    <h1>Helping UK Runners Choose with Confidence</h1>
+    <p>RunLabGear provides independent, professional running shoe advice for UK athletes. We combine hands-on testing, technical analysis and retailer price checks to produce clear recommendations without hype.</p>
+    <p>Founded by Mikey, a London Marathon finisher and long-time runner, the site focuses on practical guidance: which shoes suit which runner, how long they last and where to buy at a fair UK price.</p>
+    <p class="notice">Contact: <a href="mailto:hello@runlabgear.com">hello@runlabgear.com</a></p>
+  </div>
+
+  <div class="footer">
+    <div class="inner container">
+      <div><div class="brand">🏃 RunLabGear</div><p class="subtle">Professional running shoe reviews &amp; buying advice for UK runners.</p></div>
+      <div><div class="badge">Pages</div><p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="/disclosure.html">Affiliate Disclosure</a></p></div>
+      <div><div class="badge">Legal</div><small>© 2025 RunLabGear. All rights reserved.</small></div>
     </div>
-    
-    <div class="footer">
-      <div class="inner container">
-        <div>
-          <div class="brand">🏃 RunLabGear</div>
-          <p class="subtle">Professional running shoe reviews & buying advice for UK runners.</p>
-        </div>
-        <div>
-          <div class="badge">Pages</div>
-          <p><a href="/index.html">Home</a> · <a href="/about.html">About</a> · <a href="/disclosure.html">Affiliate Disclosure</a></p>
-        </div>
-        <div>
-          <div class="badge">Legal</div>
-          <small>© 2025 RunLabGear. All rights reserved.</small>
-        </div>
-      </div>
-    </div>
-    </body></html>
+  </div>
+
+  <!-- Affiliate click tracking -->
+  <script>
+    document.addEventListener('click', function(e){
+      const a = e.target.closest('a'); if(!a) return;
+      const href = (a.getAttribute('href')||'').toLowerCase();
+      const isAmazon = href.includes('amazon.co.uk') || href.includes('amzn.to');
+      const isSponsored = (a.getAttribute('rel')||'').toLowerCase().includes('sponsored');
+      if (isAmazon || isSponsored) {
+        gtag('event','affiliate_click',{
+          event_category:'affiliate',
+          event_label: href,
+          link_text: (a.textContent||'').trim(),
+          destination: isAmazon ? 'amazon' : 'other'
+        });
+      }
+    }, {capture:true});
+  </script>
+</body>
+</html>
